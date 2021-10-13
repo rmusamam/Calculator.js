@@ -124,3 +124,16 @@ class Calculator {
     calculator.delete()
     calculator.updateDisplay()
   })
+
+  //s is variable for sound
+  //a is for the audio play object
+   var s=document.querySelectorAll('button');
+
+   s.forEach(button => {
+    button.addEventListener("click", function(){
+    
+    var a =new Audio('beep-08b.mp3');
+    a.play();
+   })
+  })
+   
