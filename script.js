@@ -127,13 +127,37 @@ class Calculator {
 
   //s is variable for sound
   //a is for the audio play object
-   var s=document.querySelectorAll('button');
+
+  //function sound 
+   var s=document.querySelectorAll('.func');
 
    s.forEach(button => {
     button.addEventListener("click", function(){
     
-    var a =new Audio('beep-08b.mp3');
+    var a =new Audio('sounds/function.mp3');
+    a.play();
+   })
+  })
+
+  //digits sound 
+  
+  var s=document.querySelectorAll('.digit');
+  s.forEach(button => {
+    button.addEventListener("click", function(){
+    
+    var a =new Audio('sounds/digit.mp3');
     a.play();
    })
   })
    
+
+  //operation sound 
+  
+  var s=document.querySelectorAll('.operator');
+  s.forEach(button => {
+    button.addEventListener("click", function(){
+    
+    var a =new Audio('sounds/operator.mp3');
+    a.play();
+   })
+  })
